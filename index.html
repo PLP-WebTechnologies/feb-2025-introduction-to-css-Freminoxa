@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction to CSS</title>
+    <!-- Link to External CSS File -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Advanced HTML5 Demonstration</h1>
+    </header>
+
+    <main>
+        <!-- Ordered List with Roman Numerals -->
+        <section>
+            <h2>Course Objectives</h2>
+            <ol type="i">
+                <li>Implement HTML5 images</li>
+                <li>Create advanced lists</li>
+                <li>Design interactive forms</li>
+                <li>Use multimedia elements</li>
+                <li>Apply form validation</li>
+            </ol>
+        </section>
+
+        <!-- External Image from Pexels -->
+        <section>
+            <h2>Featured Image</h2>
+            <img src="https://images.pexels.com/photos/3861958/pexels-photo-3861958.jpeg" 
+                 alt="Programmer working on computer" 
+                 width="100%" 
+                 height="auto">
+        </section>
+
+        <!-- Contacts Table -->
+        <section>
+            <h2>Contact Directory</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Address</th>
+                        <th>Mobile</th>
+                        <th>Email</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>John Doe</td>
+                        <td>123 Tech Lane, Silicon Valley, CA</td>
+                        <td>+1 (555) 123-4567</td>
+                        <td>john.doe@example.com</td>
+                    </tr>
+                    <tr>
+                        <td>Jane Smith</td>
+                        <td>456 Code Street, New York, NY</td>
+                        <td>+1 (555) 987-6543</td>
+                        <td>jane.smith@example.com</td>
+                    </tr>
+                    <tr>
+                        <td>Mike Johnson</td>
+                        <td>789 Web Avenue, Austin, TX</td>
+                        <td>+1 (555) 246-8135</td>
+                        <td>mike.johnson@example.com</td>
+                    </tr>
+                    <tr>
+                        <td>Emily Brown</td>
+                        <td>321 Python Road, Boston, MA</td>
+                        <td>+1 (555) 369-2580</td>
+                        <td>emily.brown@example.com</td>
+                    </tr>
+                    <tr>
+                        <td>David Wilson</td>
+                        <td>654 JavaScript Drive, Seattle, WA</td>
+                        <td>+1 (555) 159-7530</td>
+                        <td>david.wilson@example.com</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Registration Form -->
+        <section>
+            <h2>User Registration</h2>
+            <form id="registrationForm" action="#" method="post">
+                <!-- Name Field -->
+                <label for="fullName">Full Name *</label>
+                <input type="text" 
+                       id="fullName" 
+                       name="fullName" 
+                       placeholder="Enter your full name" 
+                       required 
+                       minlength="2" 
+                       maxlength="50">
+
+                <!-- Email Field -->
+                <label for="email">Email Address *</label>
+                <input type="email" 
+                       id="email" 
+                       name="email" 
+                       placeholder="Enter your email" 
+                       required 
+                       pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+
+                <!-- Password Field -->
+                <label for="password">Password *</label>
+                <input type="password" 
+                       id="password" 
+                       name="password" 
+                       placeholder="Enter your password" 
+                       required 
+                       minlength="8" 
+                       maxlength="20">
+
+                <!-- Date of Birth -->
+                <label for="dob">Date of Birth *</label>
+                <input type="date" 
+                       id="dob" 
+                       name="dob" 
+                       required>
+
+                <!-- Dropdown - Education Level -->
+                <label for="educationLevel">Education Level *</label>
+                <select id="educationLevel" name="educationLevel" required>
+                    <option value="">Select Education Level</option>
+                    <option value="highschool">High School</option>
+                    <option value="undergraduate">Undergraduate</option>
+                    <option value="graduate">Graduate</option>
+                    <option value="postgraduate">Post Graduate</option>
+                </select>
+
+                <!-- Radio Buttons - Program Interest -->
+                <fieldset>
+                    <legend>Program of Interest *</legend>
+                    <input type="radio" id="webDev" name="program" value="webDevelopment" required>
+                    <label for="webDev">Web Development</label>
+                    
+                    <input type="radio" id="dataSci" name="program" value="dataSience">
+                    <label for="dataSci">Data Science</label>
+                    
+                    <input type="radio" id="aiMl" name="program" value="aiMachineLearning">
+                    <label for="aiMl">AI & Machine Learning</label>
+                </fieldset>
+
+                <!-- Checkboxes - Skills -->
+                <fieldset>
+                    <legend>Programming Skills</legend>
+                    <input type="checkbox" id="html" name="skills" value="html">
+                    <label for="html">HTML</label>
+                    
+                    <input type="checkbox" id="css" name="skills" value="css">
+                    <label for="css">CSS</label>
+                    
+                    <input type="checkbox" id="javascript" name="skills" value="javascript">
+                    <label for="javascript">JavaScript</label>
+                    
+                    <input type="checkbox" id="python" name="skills" value="python">
+                    <label for="python">Python</label>
+                </fieldset>
+
+                <!-- Submit Button -->
+                <button type="submit">Register</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 HTML5 Advanced Elements Demo</p>
+    </footer>
+</body>
+</html>
